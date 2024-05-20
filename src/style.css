@@ -1,0 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+/* -------------hero section--------------- */
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../sunnyside-agency-landing-page-main/images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/* navigation bar */
+nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    color: white;
+    font-size: 1.4rem;
+    padding-top: 7px;
+}
+.menu li{
+    display: inline-block;
+    color: white;
+    margin: 15px;
+}
+.menu li button{
+    color: black;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.content h1{
+    padding:70px;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    letter-spacing: 5px;
+    text-align: center;
+    font-weight: 900;
+    word-spacing: 15px;
+}
+.content .arrow{
+    text-align: center;
+    padding-top:40px;
+}
+/* -------------cards section--------------- */
+/* adding bg-images */
+.section3 .cherry{
+    background-image: url(../sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 50vw;
+}
+.section3 .orange{
+    background-image: url(../sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg);
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 50vw;
+
+}
+/* setting flex */
+.section1,.section2,.section3{
+    display: flex;
+    justify-content: space-between;
+    /* setting eact section to have 100 vw and 70% of the vh */
+    height: 70vh;
+    width: 100vw;
+}
+.cards img{
+    height: 70vh;
+    width: 50vw;
+}
+/* -----working on the cards with text-------- */
+/* aligning text */
+.section1 .transform-your-brand{
+    padding-left: 150px;
+    padding-top: 150px;
+}
+.section2 .stand-out{
+    padding-right: 100px;
+    padding-top: 150px;
+}
+.section3 .cherry,
+.section3 .orange{
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 350px;
+}
+/* styling texts */
+.cards h1{
+    font-size: 2.8rem;
+    padding-bottom: 30px;
+}
+.cards p{
+    padding-bottom: 30px;
+}
+.section1 .transform-your-brand h2{
+    text-decoration: hsla(49, 100%, 50%, 0.47) underline 10px;
+    transition: 0.3s ease;
+}
+.section2 .stand-out h2{
+    text-decoration: hsl(7, 100%, 70%,0.47) underline 10px;
+    transition: 0.3s ease;
+}
+/* -------------------------testimonials------------------------ */
+.testimonials{
+    height: 60vh;
+    width: 100vw;
+}
+.testimonials h1{
+    padding-top: 40px;
+    text-align: center;
+}
+.testimonial-cards{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.t-card{
+    width: 25vw;
+    height: 40vh;
+    margin: 80px;
+    text-align: center;
+    
+}
+.t-card img{
+    border-radius: 50%;
+    height: 100px;
+    margin-bottom: 30px;
+}
+.t-card p{
+    font-size: 15px;
+    padding-bottom: 40px;
+}
+#testimonial-card-3 p{
+    padding-bottom: 30px;
+}
+/* ----------gallary------------ */
+.gallary{
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    width: 100vw;
+}
+.gallary img{
+    height: 50vh;
+    width: 25vw;
+}
+/* --------footer--------- */
+.footer{
+    height: 50vh;
+    width: 100vw;
+    background-color: hsla(165, 45%, 72%, 0.643);
+    padding-top: 120px;
+    text-align: center;
+}
+.footer h1{
+    padding-top:50px;
+    color:rgb(7, 130, 99);
+}
+.footer ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 30px;
+    transition: 0.3s ease;
+}
+.footer .icons li {
+    margin: 5px;
+}
+
+
+/* ------------------ Active states ----------------- */
+.menu li button:hover{  
+    cursor: pointer;
+    background-color: #71CFFA;
+    border: 1px solid #71CFFA;
+    color: white;
+    /* add transition ease in button element */
+}
+.transform-your-brand h2:hover{
+    text-decoration: hsl(49, 100%, 50%) underline 10px;
+    cursor: pointer;
+    /* apply transition ease */
+}
+.stand-out h2:hover{
+    text-decoration: hsl(7, 100%, 70%) underline 10px;
+    cursor: pointer;
+    /* apply transition ease */
+}
+.footer li:hover{
+    cursor: pointer;
+    color: aliceblue;
+    /* apply transition */
+}
+/* footer icons active states not done */
+
+/* Responsiveness in the website 
+
+--Differences from desktop to mobile
+        1.menubar into hamburg icon
+        2.cards - order of arrangement is 
+            egg
+            transform
+            cup
+            stand-out
+            cherry
+            orange
+        3.Client testimonial - oder of arrangement is 
+            emily
+            thomas
+            jennie
+        4.Gallary arrangement is 
+            1st row - bottle left , orange-plate right
+            2nd row - cone left , cubes right
+        5.Fotter no change
+
+
+
+*/
